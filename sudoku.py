@@ -1,6 +1,7 @@
 from math import sqrt
 
-class Sudoku():
+
+class Sudoku:
     puzzle = []
 
     def __init__(self, puzzle):

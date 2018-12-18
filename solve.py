@@ -10,14 +10,11 @@ def find_empties(puzzle_list):
 
 
 def fill(sudoku, to_fill):
-
     if (len(to_fill) == 0):
         return sudoku
 
     cords = to_fill[0]
     valids = sudoku.get_valids(cords[1], cords[0])
-
-
 
     if (len(valids) == 0):
         return False
@@ -30,6 +27,7 @@ def fill(sudoku, to_fill):
         if(solved):
             return solved
         sudoku.insert("", cords[1], cords[0])
+
 
 def solve(sudoku):
     n = 9
